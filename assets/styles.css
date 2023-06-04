@@ -225,7 +225,7 @@ textarea {
     margin-bottom: 10px;
 }
 
-input[type="text"],input[type="number"] {
+input[type="text"],input[type="number"],#borrar,#resumen {
     width: 29.5vw;
 }
 

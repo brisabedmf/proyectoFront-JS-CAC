@@ -1,0 +1,267 @@
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #5b575a;
+}
+
+#logoPrincipal {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+#navegacion {
+    color:#cdcccd;
+}
+
+#navegacion a{
+    margin-right: 1vw;
+}
+
+#texto-blanco {
+    color: white;
+}
+
+#texto-verde {
+    color:#41bd26;
+}
+
+.portada {
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./imagenes/ba1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #41bd26;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color:white;
+    padding: 3vw;
+}
+
+#alineado-izquierda {
+    text-align: end;
+    width: 50%;
+}
+
+.contenedor-botones {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.boton-transparente {
+    background-color: none;
+    border: gainsboro solid 0.5px;
+    border-radius: 10px;
+    padding: 1vh;
+    min-width: 14vw;
+    text-align: center;
+}
+
+#boton-verde {
+    background-color: #41bd26;
+    border: gainsboro solid 0.5px;
+    border-radius: 10px;
+    padding: 1vh;
+    margin-left: 1vw;
+    min-width: 14vw;
+}
+
+.contenedor-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    margin-right: 3vw;
+}
+
+#oradores {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos-categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.icono-js {
+    background-color: #f0e040;
+    border: #f0e040 solid 0.5px;
+    border-radius: 10px;
+    padding: 0.5vh;
+    margin-right: 0.5vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+.icono-react {
+    background-color: #25d8d0;
+    border: #25d8d0 solid 0.5px;
+    border-radius: 10px;
+    padding: 0.5vh;
+    margin-right: 0.5vw;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.icono-negocios {
+    background-color: #798484;
+    border: #798484 solid 0.5px;
+    border-radius: 10px;
+    padding: 0.5vh;
+    margin-right: 0.5vw;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.icono-startups {
+    background-color: #f7212a;
+    border: #f7212a solid 0.5px;
+    border-radius: 10px;
+    padding: 0.5vh;
+    margin-right: 0.5vw;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-honolulu {
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+}
+
+
+.imagen-honolulu{
+    background-color: #434142;
+    background-image: url("./imagenes/honolulu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+.fondo-gris {
+    background-color: #434142;
+    color:white;
+}
+
+#titulo-honolulu {
+    margin-top: 1vh;
+}
+
+#ser-orador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#less-margin {
+    margin-bottom: 0.5vh;
+}
+
+em {
+    font-style: normal;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.boton-enviar {
+    background-color: #45df30;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.ingresar-datos-oradores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: block;
+    width: 60%;
+}
+
+#texto-form {
+    width: 100%;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+}
+
+#nombre-apellido {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"]{
+    width: 29.5vw;
+}
+
+#nombre {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #10658f;
+    color: white;
+    text-align: center;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1000px){
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    #navegacion {
+        margin-top: 1vh;
+        margin-left: 2vw;
+    }
+
+    .contenedor-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 2vh;
+    }
+}
+
+@media screen and (max-width:650px){
+    
+    #navegacion{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -168,15 +168,18 @@
 
         <form>
 
-            <div id="dos-elementos-form">
+            <div class="dos-elementos-form">
+
                 <div>
-                    <label for="nombre"></label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <label for="nombre-1"></label>
+                    <input type="text" id="nombre-1" name="nombre" placeholder="Nombre" required>
                 </div>
+
                 <div>
-                    <label for="apellido"></label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                    <label for="apellido-1"></label>
+                    <input type="text" id="apellido-1" name="apellido" placeholder="Apellido" required>
                 </div>
+
             </div>
 
             <div>
@@ -226,31 +229,31 @@
 
             <p>VENTA</p>
 
+            <h2>VALOR DE TICKET $200</h2>
+
         </div>
 
         <div id="formulario-ticket">
 
-            <h2>VALOR DE TICKET $200</h2>
-
             <form>
 
-                <div id="dos-elementos-form">
+                <div class="dos-elementos-form">
                     <div>
-                        <label for="nombre"></label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <label for="nombre-2"></label>
+                        <input type="text" id="nombre-2" name="nombre" placeholder="Nombre">
                     </div>
                     <div>
-                        <label for="apellido"></label>
-                        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                        <label for="apellido-2"></label>
+                        <input type="text" id="apellido-2" name="apellido" placeholder="Apellido">
                     </div>
                 </div>
 
                 <div>
                     <label for="correo"></label>
-                    <input type="text" id="correo" name="correo" placeholder="Correo">
+                    <textarea id="correo" name="correo" placeholder="Correo"></textarea>
                 </div>
 
-                <div id="dos-elementos-form">
+                <div class="dos-elementos-form">
                     <div>
                         <label for="cantidad">Cantidad</label>
                         <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad" required>
@@ -265,9 +268,15 @@
 
                 <div id="resultado">Total a Pagar: $</div>
 
-                <div id="dos-elementos-form">
-                    <button class="boton-enviar">Borrar</button>
-                    <button id="resumen" class="boton-enviar">Resumen</button>
+                <div class="dos-elementos-form">
+                    <div>
+                        <button class="boton-enviar">Borrar</button>
+                    </div>
+
+                    <div>
+                        <button id="resumen" class="boton-enviar">Resumen</button>
+                    </div>
+                    
                 </div>
 
             </form>

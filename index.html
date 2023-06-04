@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- Metadatos -->
@@ -9,10 +10,13 @@
     <meta name="description" content="Proyecto integrador 1 - Front">
     <meta name="keywords" content="HTML,CSS,Bootstrap">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- CSS -->
@@ -30,48 +34,49 @@
     <!--Barra de navegacion-->
     <header>
 
-        <div id ="logoPrincipal">
+        <div id="logoPrincipal">
             <img src="./assets/imagenes/codoacodo.png" width="100vw">
             <h3>Conf Bs As</h3>
         </div>
 
         <nav id="navegacion">
-            <a id="texto-blanco">La conferencia</a>
-            <a>Los oradores</a>
-            <a>El lugar y la fecha</a>
-            <a>Conviertete en orador</a>
-            <a id="texto-verde">Comprar tickets</a>
+            <a href="#inicio">La conferencia</a>
+            <a href="#lista-oradores">Los oradores</a>
+            <a href="#lugaryFecha">El lugar y la fecha</a>
+            <a href="#convertite-orador" id="hover-blanco">Conviertete en orador</a>
+            <a href="#comprar-tickets" id="hover-verde">Comprar tickets</a>
         </nav>
 
     </header>
 
     <!-- Portada -->
-    <section class="portada">
+    <section id="portada">
 
         <h2>Conf Bs As</h2>
 
-        <p id="alineado-izquierda">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
-        conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a
-        conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel
-        que tenemos para ti. Te esperamos!
+        <p id="alineado-izquierda">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra
+            comunidad el
+            conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a
+            conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel
+            que tenemos para ti. Te esperamos!
         </p>
 
         <div class="contenedor-botones">
-            <p class="boton-transparente">Quiero ser orador</p>
-            <p id="boton-verde">Comprar tickets</p>
+            <button id="boton-quiero-ser-orador" class="boton-transparente">Quiero ser orador</button>
+            <button id="boton-verde">Comprar tickets</button>
         </div>
 
     </section>
-    
+
 
     <!--Oradores-->
-    <section class="descripcion-oradores">
+    <section id="lista-oradores" class="descripcion-oradores">
 
         <div id="oradores">
             <p>CONOCE A LOS</p>
             <h2>ORADORES</h2>
         </div>
-    
+
         <!-- Cards de oradores -->
         <div class="contenedor-cards">
             <div>
@@ -83,13 +88,15 @@
                             <p class="icono-js">JavaScript</p>
                             <p class="icono-react">React</p>
                         </div>
-                        <h3>Steve Jobs</h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quod repellat ab
-                        eos non, libero, temporibus doloribus, vitae laboriosam magnam rem quia quas earum neque consectetur
+                        <h3>Steve Jobs</h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quod
+                        repellat ab
+                        eos non, libero, temporibus doloribus, vitae laboriosam magnam rem quia quas earum neque
+                        consectetur
                         natus qui id assumenda?</p>
                     </div>
                 </div>
             </div>
-    
+
             <div>
                 <div class="card" style="width: 18rem;">
                     <img src="./assets/imagenes/bill.jpg" class="card-img-top" alt="Bill Gates">
@@ -99,13 +106,14 @@
                             <p class="icono-js">JavaScript</p>
                             <p class="icono-react">React</p>
                         </div>
-                        <h3>Bill Gates</h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veritatis cum
+                        <h3>Bill Gates</h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veritatis
+                        cum
                         natus totam blanditiis quibusdam, repudiandae nulla in illo ipsum, voluptas cumque deserunt
                         praesentium reiciendis. Porro cum minus vitae tempora.</p>
                     </div>
                 </div>
             </div>
-    
+
             <div>
                 <div class="card" style="width: 18rem;">
                     <img src="./assets/imagenes/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
@@ -121,13 +129,13 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
 
     <!--Buenos Aires en Octubre-->
-    <section class="container-fluid info-honolulu">
+    <section id="lugaryFecha" class="container-fluid info-honolulu">
         <div class="row">
 
             <div class="col-sm-6 col-lg-5 imagen-honolulu"></div>
@@ -135,12 +143,12 @@
             <div class="col-sm-6 col-lg-7 fondo-gris">
                 <h1 id="titulo-honolulu">Bs As - Octubre</h1>
                 <p id="parrafo-honolulu">Buenos Aires es la provincia y localidad mas grande del estado
-                de Argentina, en los Estados Unidos. Honolulu es la mas surenia de
-                entre las principales ciudades estadounidenses. Aunque el nombre
-                de Honolulu se refiere al area urbana en la costa sureste de la isla
-                de Oahu, la ciudad y el condado de Honolulu han formado una ciudad
-                condado consolidada que cubre toda la ciudad (aproximadamente 600km^2
-                de superficie).
+                    de Argentina, en los Estados Unidos. Honolulu es la mas surenia de
+                    entre las principales ciudades estadounidenses. Aunque el nombre
+                    de Honolulu se refiere al area urbana en la costa sureste de la isla
+                    de Oahu, la ciudad y el condado de Honolulu han formado una ciudad
+                    condado consolidada que cubre toda la ciudad (aproximadamente 600km^2
+                    de superficie).
                 </p>
                 <p class="boton-transparente" style="max-width: 12vw; min-width: 150px">Conoce mas</p>
             </div>
@@ -150,81 +158,169 @@
 
 
     <!--Formulario para convertirse en orador-->
-    <section class="ingresar-datos-oradores">
+    <section id="convertite-orador" class="ingresar-datos-oradores">
 
         <div id="ser-orador">
             <p id="less-margin">CONVIERTETE EN UN</p>
             <h2>ORADOR</h2>
-            <p>Anotate como orador para dar una <em>charla ignite</em>. Cuentanos de que quieres hablar!</p>    
+            <p>Anotate como orador para dar una <em>charla ignite</em>. Cuentanos de que quieres hablar!</p>
         </div>
 
         <form>
 
-            <div id="nombre-apellido">
+            <div id="dos-elementos-form">
                 <div>
                     <label for="nombre"></label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>                         
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
                 </div>
                 <div>
                     <label for="apellido"></label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>                          
-                </div>           
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
             </div>
-            
+
             <div>
                 <label for="texto"></label>
                 <textarea id="texto" name="texto" placeholder="Sobre que quieres hablar?" required></textarea>
-                <p style="color:gray">Recuerda incluir un titulo para tu charla </p>       
+                <p style="color:gray">Recuerda incluir un titulo para tu charla </p>
             </div>
-            
+
             <div>
                 <input type="submit" value="Enviar" class="boton-enviar">
             </div>
-            
+
         </form>
-          
-    </section>    
+
+    </section>
 
 
-    <!-- Pie de pagina -->
-        <footer class="container-fluid">
+    <!-- Compra de los tickets -->
+    <section id="comprar-tickets" class="container text-center">
+
+        <div id="descuentos">
 
             <div class="row">
-                <div class="col">
-                    <a>Preguntas <br> Frecuentes</a>
+
+                <div class="col" id="estudiante">
+                    <h4>Estudiante</h4>
+                    <p>Tienen un descuento</p>
+                    <h4>80%</h4>
+                    <p>*presentar documentacion</p>
                 </div>
 
-                <div class="col">
-                    <a>Contactanos</a>
+                <div class="col" id="trainee">
+                    <h4>Trainee</h4>
+                    <p>Tienen un descuento</p>
+                    <h4>50%</h4>
+                    <p>*presentar documentacion</p>
                 </div>
 
-                <div class="col">
-                    <a>Prensa</a>
+                <div class="col" id="junior">
+                    <h4>Junior</h4>
+                    <p>Tienen un descuento</p>
+                    <h4>15%</h4>
+                    <p>*presentar documentacion</p>
                 </div>
 
-                <div class="col">
-                    <a>Conferencias</a>
-                </div>
-
-                <div class="col">
-                    <a>Terminos y <br> Condiciones</a>
-                </div>
-
-                <div class="col">
-                    <a>Privacidad</a>
-                </div>
-
-                <div class="col">
-                    <a>Estudiantes</a>
-                </div>
-                
             </div>
 
-    </footer>
-      
+            <p>VENTA</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+        </div>
+
+        <div id="formulario-ticket">
+
+            <h2>VALOR DE TICKET $200</h2>
+
+            <form>
+
+                <div id="dos-elementos-form">
+                    <div>
+                        <label for="nombre"></label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div>
+                        <label for="apellido"></label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="correo"></label>
+                    <input type="text" id="correo" name="correo" placeholder="Correo">
+                </div>
+
+                <div id="dos-elementos-form">
+                    <div>
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad" required>
+                    </div>
+
+                    <div>
+                        <label for="categoria">Categoria</label>
+                        <input type="text" id="categoria" name="categoria" placeholder="Categoria" required>
+                    </div>
+
+                </div>
+
+                <div id="resultado">Total a Pagar: $</div>
+
+                <div id="dos-elementos-form">
+                    <button class="boton-enviar">Borrar</button>
+                    <button id="resumen" class="boton-enviar">Resumen</button>
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </section>
+
+    <!-- Pie de pagina -->
+    <footer class="container-fluid">
+
+        <div class="row">
+            <div class="col">
+                <a>Preguntas <br> Frecuentes</a>
+            </div>
+
+            <div class="col">
+                <a>Contactanos</a>
+            </div>
+
+            <div class="col">
+                <a>Prensa</a>
+            </div>
+
+            <div class="col">
+                <a>Conferencias</a>
+            </div>
+
+            <div class="col">
+                <a>Terminos y <br> Condiciones</a>
+            </div>
+
+            <div class="col">
+                <a>Privacidad</a>
+            </div>
+
+            <div class="col">
+                <a>Estudiantes</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

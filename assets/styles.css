@@ -1,5 +1,5 @@
 header {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -7,30 +7,35 @@ header {
 }
 
 #logoPrincipal {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     color: white;
 }
 
-#navegacion {
-    color:#cdcccd;
+a {
+    text-decoration: none;
+    color: #cdcccd;
 }
 
-#navegacion a{
+#navegacion a {
     margin-right: 1vw;
 }
 
-#texto-blanco {
-    color: white;
+#navegacion a:hover {
+    color: #f0e040;
 }
 
-#texto-verde {
-    color:#41bd26;
+#hover-blanco:hover {
+    color: white !important;
 }
 
-.portada {
+#hover-verde:hover {
+    color: #41bd26 !important;
+}
+
+#portada {
     --opacidad-negro: 0.5;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./imagenes/ba1.jpg");
     background-repeat: no-repeat;
@@ -42,7 +47,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    color:white;
+    color: white;
     padding: 3vw;
 }
 
@@ -118,7 +123,7 @@ header {
     border-radius: 10px;
     padding: 0.5vh;
     margin-right: 0.5vw;
-    color:white;
+    color: white;
     font-weight: bold;
     text-align: center;
 }
@@ -129,7 +134,7 @@ header {
     border-radius: 10px;
     padding: 0.5vh;
     margin-right: 0.5vw;
-    color:white;
+    color: white;
     font-weight: bold;
     text-align: center;
 }
@@ -140,7 +145,7 @@ header {
     border-radius: 10px;
     padding: 0.5vh;
     margin-right: 0.5vw;
-    color:white;
+    color: white;
     font-weight: bold;
     text-align: center;
 }
@@ -151,7 +156,7 @@ header {
 }
 
 
-.imagen-honolulu{
+.imagen-honolulu {
     background-color: #434142;
     background-image: url("./imagenes/honolulu.jpg");
     background-repeat: no-repeat;
@@ -161,7 +166,7 @@ header {
 
 .fondo-gris {
     background-color: #434142;
-    color:white;
+    color: white;
 }
 
 #titulo-honolulu {
@@ -199,7 +204,7 @@ em {
     align-items: center;
 }
 
-form{
+form {
     display: block;
     width: 60%;
 }
@@ -208,23 +213,24 @@ form{
     width: 100%;
 }
 
-textarea{
+textarea {
     display: block;
     width: 100%;
 }
 
-#nombre-apellido {
+#dos-elementos-form {
     display: flex;
     justify-content: center;
 }
 
-input[type="text"]{
+input[type="text"] {
     width: 29.5vw;
 }
 
 #nombre {
     margin-right: 10px;
 }
+
 
 footer {
     background-color: #10658f;
@@ -236,7 +242,45 @@ footer {
     align-items: center;
 }
 
-@media screen and (max-width:1000px){
+
+#comprar-tickets {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#descuentos {
+    width: 60%;
+}
+
+#estudiante {
+    border: 2px solid #4e2bef;
+    margin-right: 1vw;
+    padding: 4vh 2vw;
+}
+
+#trainee {
+    border: 2px solid #1ba3af;
+    margin-right: 1vw;
+    padding: 4vh 2vw;
+}
+
+#junior {
+    border: 2px solid #e6f614;
+    padding: 4vh 2vw;
+}
+
+#resultado {
+    background-color:rgb(52, 166, 248);
+    color:#ede8ed;
+    text-align: left;
+    padding-left: 1vw;
+}
+
+
+@media screen and (max-width:1000px) {
     header {
         flex-direction: column;
         justify-content: space-evenly;
@@ -258,9 +302,9 @@ footer {
     }
 }
 
-@media screen and (max-width:650px){
-    
-    #navegacion{
+@media screen and (max-width:650px) {
+
+    #navegacion {
         display: flex;
         flex-direction: column;
     }
